@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option go_package = "protogen/basic";
+message Hello {
+    string message = 1;
+}
+
+message MyScallar {
+    uint32 my_uint32 = 1;
+    int32 my_int32 = 2;
+    bool my_bool = 3;
+    string my_string = 4;
+    bytes my_bytes = 5;
+}
+
+// message User {
+//     uint32 id = 1;
+//     string username = 2;
+//     bool is_active = 3;
+//     bytes password = 4;
+// }
