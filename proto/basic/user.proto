@@ -2,9 +2,25 @@ syntax = "proto3";
 
 option go_package = "protogen/basic";
 
+enum Gender {
+    UNKNOWN = 0;
+    MALE = 1;
+    FEMALE = 2;
+}
+
 message User {
     uint32 id = 1;
     string username = 2;
-    bool is_active = 3;
+    bool is_active = 3 [json_name = "is_active"];
     bytes password = 4;
+    // this is a comment
+    repeated string emails = 5;
+    Gender gender = 6;
+    Address address = 7;
+}
+
+message Address {
+    string street = 1;
+    string city = 2;
+    string country = 3;
 }

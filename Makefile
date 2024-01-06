@@ -3,3 +3,6 @@ gen_proto-hello:
 
 gen_proto-user:
 	protoc --go_out=plugins=grpc:. --go_opt=Muser.proto=../../protogen ./proto/basic/user.proto
+
+run:
+	go run main.go
