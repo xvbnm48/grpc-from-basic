@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "protogen/basic";
+option go_package = "github.com/xvbnm48/grpc-basic/protogen/basic";
 
 enum Gender {
     UNKNOWN = 0;
@@ -23,4 +23,9 @@ message Address {
     string street = 1;
     string city = 2;
     string country = 3;
+    Coordinate coordinate = 4;
+    message Coordinate {
+        double latitude = 1;
+        double longitude = 2;
+    }
 }

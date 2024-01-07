@@ -12,6 +12,10 @@ func BasicUser() {
 		Street:  "pondok cabe tangerang selatan",
 		City:    "tangerang",
 		Country: "indonesia",
+		Coordinate: &basic.Address_Coordinate{
+			Latitude:  6.0,
+			Longitude: 106.0,
+		},
 	}
 	u := basic.User{
 		Id:       1,

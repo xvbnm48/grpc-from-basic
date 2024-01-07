@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "protogen/basic";
+option go_package = "github.com/xvbnm48/grpc-basic/protogen/basic";
 import "proto/basic/user.proto";
 
 

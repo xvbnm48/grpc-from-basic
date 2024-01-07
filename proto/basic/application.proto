@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package the.basic;
+
+option go_package = "github.com/xvbnm48/grpc-basic/protogen/basic";
+
+
+// software
+
+message Application {
+    string version = 1;
+    string name = 2;
+    repeated string platforms = 3;
+}

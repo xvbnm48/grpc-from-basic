@@ -5,7 +5,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/xvbnm48/grpc-basic/basic"
+	"github.com/xvbnm48/grpc-basic/jobsearch"
 )
 
 type logWriter struct{}
@@ -19,7 +19,9 @@ func main() {
 	log.SetOutput(new(logWriter))
 	// basic.BasicHello()
 	// basic.BasicUser()
-	basic.BasicUserGroup()
+	jobsearch.JobSearchSoftware()
+	jobsearch.JobSearchCandidate()
+	// basic.BasicUserGroup()
 	// basic.ProtoToJsonUser()
 	// basic.JsonToProto()
 }
